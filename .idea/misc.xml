@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable-v24/edit.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable-v24/edit_background.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable-v24/ic_profile.xml" value="0.1255" />
@@ -11,10 +12,15 @@
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1255" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/drawable/ic_contact.xml" value="0.1255" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/add_contact_dialog.xml" value="0.2" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/add_course_dialog.xml" value="0.2" />
-        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/item_contact.xml" value="0.2" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/delete_contact_dialog.xml" value="0.2" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/edit_contact_dialog.xml" value="0.2" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/item_contact.xml" value="0.25" />
         <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/layout/item_student.xml" value="0.2" />
+        <entry key="..\:/Mobiller/AndroidStudioProjects/Lesson54Contact/app/src/main/res/menu/popup_menu.xml" value="0.2" />
       </map>
     </option>
   </component>

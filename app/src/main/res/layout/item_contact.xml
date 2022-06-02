@@ -7,25 +7,25 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#171717"
         android:layout_marginTop="5dp"
-        app:cardElevation="0dp"
         android:layout_marginBottom="5dp"
-        app:cardCornerRadius="25dp">
+        android:backgroundTint="#171717"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:padding="5dp">
+            android:padding="10dp">
 
             <androidx.cardview.widget.CardView
-                app:cardElevation="0dp"
                 android:id="@+id/cardView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:cardCornerRadius="50dp">
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp">
 
                 <TextView
                     android:id="@+id/iconName"
@@ -38,16 +38,51 @@
 
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:id="@+id/name_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
-                android:text="Ibrohimjon"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="Ibrohimjon"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="Ibrohimjon"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_phone_24" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/edit" />
 
         </LinearLayout>
 
