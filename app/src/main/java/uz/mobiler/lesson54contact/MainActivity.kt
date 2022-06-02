@@ -4,19 +4,15 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
-import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.blue
 import uz.mobiler.lesson54contact.adapter.ContactAdapter
 import uz.mobiler.lesson54contact.database.AppDatabase
 import uz.mobiler.lesson54contact.database.entity.Contact
 import uz.mobiler.lesson54contact.databinding.ActivityMainBinding
-import uz.mobiler.lesson54contact.databinding.ItemContactBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             list = ArrayList(appDatabase.contactDao().getAllStudents())
             contactAdapter = ContactAdapter(
+                lottie,
                 appDatabase,
                 this@MainActivity,
                 list,

@@ -9,12 +9,15 @@ import android.view.ViewGroup
 import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.Lottie
+import com.airbnb.lottie.LottieAnimationView
 import uz.mobiler.lesson54contact.R
 import uz.mobiler.lesson54contact.database.AppDatabase
 import uz.mobiler.lesson54contact.database.entity.Contact
 import uz.mobiler.lesson54contact.databinding.ItemContactBinding
 
 class ContactAdapter(
+    val lottie: LottieAnimationView,
     val appDatabase: AppDatabase,
     val c: Context,
     var list: ArrayList<Contact>,
@@ -138,6 +141,11 @@ class ContactAdapter(
                         v.findViewById<TextView>(R.id.save).setOnClickListener {
                             appDatabase.contactDao().deleteContact(contact)
                             list.remove(contact)
+                            if (list.isNotEmpty()) {
+                                lottie.visibility = View.INVISIBLE
+                            } else {
+                                lottie.visibility = View.VISIBLE
+                            }
                             notifyDataSetChanged()
                             mAlterDialog.dismiss()
                         }
