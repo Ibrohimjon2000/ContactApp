@@ -139,8 +139,8 @@ class ContactAdapter(
                         val mAlterDialog = mBuilder.show()
                         mAlterDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
                         v.findViewById<TextView>(R.id.save).setOnClickListener {
-                            appDatabase.contactDao().deleteContact(contact)
                             list.remove(contact)
+                            appDatabase.contactDao().deleteContact(contact)
                             if (list.isNotEmpty()) {
                                 lottie.visibility = View.INVISIBLE
                             } else {

@@ -16,10 +16,4 @@ interface ContactDao {
 
     @Update
     fun editContact(contact: Contact)
-
-    @Query("select * from contact where id=:id")
-    fun getContactById(id:Int):Contact
-
-    @Query("select * from contact where name like '%' || :word || '%'")
-    fun getContactsByName(word:String):List<Contact>
 }
